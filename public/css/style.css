@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(233, 236, 236);
+}
+header{
+    width: 100%;
+    height: 75px;
+    background: rgb(12, 11, 11);
+}
+.bc{
+    color: rgb(51, 148, 228);
+    font-weight: bold
+}
+nav{
+    width: 80%;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    color: rgb(51, 148, 228);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav h2:hover{
+    color: rgb(93, 172, 241);
+}
+
+
+td{
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+thead{
+    background: rgb(93, 172, 241);
+    color: aliceblue;
+    text-align: center;
+}
+
+.formulario{
+    width: 80%;
+    height: 500px;
+    background: lightgray;
+    margin: 150px auto;
+}
+.main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario h3{
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.user{
+    width: 90%;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.user input{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    margin-top: 5px;
+
+}
+
+.name{
+    width: 90%;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.name input{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    margin-top: 5px;
+}
+
+.rol{
+    width: 90%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    
+}
+
+.rol select{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    margin-top: 5px;
+}
+
+.button{
+    width: 90%;
+    background: rgb(63, 182, 48);
+    text-transform: uppercase;
+    border: none;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    transition-duration: 0.8s;
+
+}
+.button:hover{
+    color: rgb(224, 224, 180);
+}
+.cancelar{
+    width: 90%;
+    background: rgb(136, 136, 136);
+    text-transform: uppercase;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    transition-duration: 0.8s;
+
+}
+.cancelar:hover{
+    color: rgba(230, 48, 48, 0.952);
+}
+
+label{
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #8f8f8f;
+    color: rgb(227, 229, 231);
+    letter-spacing: 2px;
+    position: fixed;
+    bottom: 0%;
+    font-size: 14px;
+}

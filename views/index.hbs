@@ -1,0 +1,38 @@
+    
+    {{> header}}
+    {{> navbar}}
+    
+
+    <div class="container">
+        <a href="/create" class="btn btn-outline-primary mt-4"><i class='bx bxs-plus-circle' ></i></a>
+        <br>
+        <br>
+        <table class="table">
+            <thead>
+                <tr class="hola">
+                    <th scope="col">ID</th>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each results}}
+
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{user}}</td>
+                    <td>{{name}}</td>
+                    <td>{{rol}}</td>
+                    <td>
+                        <a href="/edit/{{id}}" class="btn btn-outline-info">Editar</a>
+                        <a href="/delete/{{id}}" class="btn btn-outline-danger">Borrar</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    {{> footer }}

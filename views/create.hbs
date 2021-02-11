@@ -1,0 +1,33 @@
+{{> header}}
+{{> navbar}}
+
+
+        <div class="formulario">
+            <h3>Nuevo registro</h3>
+        <!-- El /save nos permite capturar todos nuestros datos controlador-->
+            <form action="/create" class="main-form" method="POST">
+
+                <div class="user">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="user" name="user">
+                </div>
+
+                <div class="name">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="rol">
+                    <label for="rol" class="label">Rol</label>
+                    <select name="rol" id="rol">
+                        <option value="admin" selected>Admin</option>
+                        <option value="invited">invited</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button">Guardar</button>
+                <a href="/" class="cancelar"><span class="cancelarAnimation">Cancelar</span></a>
+            </form>
+        </div>
+
+{{> footer}}

@@ -1,0 +1,33 @@
+{{> header}}
+{{> navbar}}
+
+
+        <div class="formulario">
+            <h3>Editar registro</h3>
+        <!-- El /save nos permite capturar todos nuestros datos controlador-->
+            <form action="/edit/{{results.id}}" class="main-form" method="POST">
+
+                <div class="user">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" value="{{results.user}}" id="user" name="user">
+                </div>
+
+                <div class="name">
+                    <label for="name">Nombre</label>
+                    <input type="text" value="{{results.name}}" id="name" name="name">
+                </div>
+
+                <div class="rol">
+                    <label for="rol" class="label">Rol</label>
+                    <select name="rol" value="{{results.rol}}" id="rol">
+                        <option value="admin" selected>Admin</option>
+                        <option value="invited">invited</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button">Editar</button>
+                <a href="/" class="cancelar">Cancelar</a>
+            </form>
+        </div>
+
+{{> footer}}
