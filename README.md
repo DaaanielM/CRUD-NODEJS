@@ -5,4 +5,3 @@ npm install
 
 ```
 
-<img src="/img/crud.png" alt="noo">
