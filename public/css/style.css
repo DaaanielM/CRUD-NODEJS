@@ -25,10 +25,14 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav h2{
+nav h2 a{
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 2.2rem;
 }
+
+
 nav ul {
     display: flex;
     flex-flow: row wrap;
@@ -43,14 +47,16 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    margin: 15px;
-    letter-spacing: 2px;
+    margin: 20px;
+    letter-spacing: 3px;
     font-weight: bold;
 }
 
 nav ul li a:hover,
 nav h2:hover{
     color: rgb(93, 172, 241);
+    border-bottom: 1px solid #fff;
+
 }
 
 
@@ -95,8 +101,8 @@ thead{
     width: 100%;
     padding: 6px;
     border: none;
-    margin-top: 5px;
-
+    margin-top: 15px;
+    
 }
 
 .name{
